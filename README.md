@@ -1,5 +1,3 @@
-# Coffee Sales Dashboard
-
 ## Project Background
 
 Savanna Brews is a Mogadishu-based coffee shop chain established in 2021, serving customers across three city branches — Hodan, Wadajir, and Yaqshid — through a direct in-store retail model. The company collects daily transactional data across sales, product performance, branch operations, and customer payment behavior — but much of this data has remained underutilized.
