@@ -14,3 +14,14 @@ An interactive Power bi  dashboard used to report and explore sales trends can b
 # Executive Summary
 ### Overview of Findings
 Savanna Brews derives most of its revenue from predictable daily peaks, especially the 7–8 AM morning rush and a pronounced lunchtime surge, with lattes and cappuccinos dominating orders during these periods. The Hodan branch, located in the central business district, consistently outperforms Wadajir and Yaqshid, making it the leading choice for additional staffing and inventory investment. Although weekends operate only two days, they deliver nearly twice the per-day revenue of weekdays, revealing the business’s most significant untapped growth potential.
+
+![Dashboard](Dashboard.png)
+
+# Insights Deep Dive
+### Sales Trends:
+
+- **Morning hours between 7–8 AM** represent the single busiest period of the day across all branches, indicating a strong commuter-driven coffee culture that the business should fully capitalize on through adequate staffing and stocked inventory before opening.
+- A secondary traffic peak occurs at around **1 PM during lunchtime** , though it does not reach morning levels — suggesting an opportunity to introduce lunch promotions or combo deals to lift midday revenue closer to the morning benchmark.
+- **Thursday and Friday** are the busiest days of the week, pointing to an end-of-week spike in customer activity that may be tied to social habits or work schedules in Mogadishu.
+- Weekends account for **42% of total revenue** despite being only 2 out of 7 days — translating to **nearly double the per-day revenue of weekdays**, signaling strong untapped demand that targeted weekend campaigns could further amplify.
+
