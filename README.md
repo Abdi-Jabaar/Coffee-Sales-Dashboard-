@@ -25,3 +25,4 @@ Savanna Brews derives most of its revenue from predictable daily peaks, especial
 - **Thursday and Friday** are the busiest days of the week, pointing to an end-of-week spike in customer activity that may be tied to social habits or work schedules in Mogadishu.
 - Weekends account for **42% of total revenue** despite being only 2 out of 7 days — translating to **nearly double the per-day revenue of weekdays**, signaling strong untapped demand that targeted weekend campaigns could further amplify.
 
+![dashboard](Sales.png)
