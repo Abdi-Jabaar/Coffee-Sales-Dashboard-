@@ -29,4 +29,8 @@ Savanna Brews derives most of its revenue from predictable daily peaks, especial
 
 ![dashboard](Week.png)
 
+### Product Performance:
 
+- **Lattes and cappuccinos** are the most frequently purchased products across all branches, particularly during the peak morning window, making them the **core revenue-driving SKUs** that must remain consistently available.
+- High demand for these two products during the busiest hours creates a **preparation bottleneck risk**, if staff cannot produce them fast enough, wait times increase and customer experience deteriorates.
+  
