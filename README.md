@@ -6,6 +6,7 @@ The company collects daily transactional data across sales, product performance,
 Key Areas of Analysis
 
 **Sales Trends Analysis:** Evaluation of daily and hourly sales patterns across all branches, focusing on revenue, order volume, and average order value (AOV).
+
 **Product Performance:** Analysis of individual products to understand their contribution to total revenue and quantity sold.
 
 **Branch-Level Comparisons:** Evaluation of sales and order volume across the Hodan, Wadajir, and Yaqshid branches to identify top performers and operational gaps.
