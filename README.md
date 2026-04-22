@@ -33,4 +33,10 @@ Savanna Brews derives most of its revenue from predictable daily peaks, especial
 
 - **Lattes and cappuccinos** are the most frequently purchased products across all branches, particularly during the peak morning window, making them the **core revenue-driving SKUs** that must remain consistently available.
 - High demand for these two products during the busiest hours creates a **preparation bottleneck risk**, if staff cannot produce them fast enough, wait times increase and customer experience deteriorates.
-  
+
+![dashboard](Product.png)
+
+### Branch-Level Comparisons:
+
+- **Hodan is the highest revenue-generating branch**, a pattern directly tied to its central business district location where daily foot traffic is naturally the highest among the three.
+- **Wadajir and Yaqshid** serve residential catchment areas and record lower volumes by comparison  however, their ability to sustain consistent revenue outside a business district signals that the **Savanna Brews brand has genuine reach and growth potential** in non-commercial neighborhoods.
