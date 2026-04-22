@@ -1,17 +1,15 @@
 # Coffee Sales Dashboard
 
-## Analysis
+## Project Background
 
-- Sales performance overview
-- Customer feedback summary
-- Product trends
+Savanna Brews is a Mogadishu-based coffee shop chain established in 2021, serving customers across three city branches — Hodan, Wadajir, and Yaqshid — through a direct in-store retail model. The company collects daily transactional data across sales, product performance, branch operations, and customer payment behavior — but much of this data has remained underutilized.
 
-## Installation
+This project aims to analyze and synthesize that data to uncover insights that will improve Savanna Brews' operational efficiency and commercial success.
 
-1. Clone the repo
-2. Install dependencies
-3. Run the app
+## Key Areas of Analysis
 
-## Usage
+**Sales Trends Analysis:** Evaluation of daily and hourly sales patterns across all branches, focusing on revenue, order volume, and average order value (AOV).
 
-Follow the instructions to use the dashboard for insights into coffee sales.
+**Product Performance:** Analysis of individual products to understand their contribution to total revenue and quantity sold.
+
+**Branch-Level Comparisons:** Evaluation of sales and order volume across the Hodan, Wadajir, and Yaqshid branches to identify top performers and operational gaps.
