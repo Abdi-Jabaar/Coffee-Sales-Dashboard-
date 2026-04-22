@@ -1,5 +1,5 @@
 # Project Background
-Savanna Brews is a Mogadishu-based coffee shop chain established in 2021, serving customers across three city branches — Hodan, Wadajir, and Yaqshid ,through a direct in-store retail model. 
+Savanna Brews is a Mogadishu-based coffee shop chain established in 2021, serving customers across three city branches  Hodan, Wadajir, and Yaqshid ,through a direct in-store retail model. 
 
 The company collects daily transactional data across sales, product performance, branch operations, and customer payment behavior , but much of this data has remained underutilized.This project aims to analyze and synthesize that data to uncover insights that will improve Savanna Brews' operational efficiency and commercial success.
 
@@ -40,3 +40,13 @@ Savanna Brews derives most of its revenue from predictable daily peaks, especial
 
 - **Hodan is the highest revenue-generating branch**, a pattern directly tied to its central business district location where daily foot traffic is naturally the highest among the three.
 - **Wadajir and Yaqshid** serve residential catchment areas and record lower volumes by comparison  however, their ability to sustain consistent revenue outside a business district signals that the **Savanna Brews brand has genuine reach and growth potential** in non-commercial neighborhoods.
+
+ ![dashboard](Branch.png)
+
+# Recommendations:
+Based on the insights and findings above, we would recommend the **operations and management team** to consider the following:
+- **Morning hours between 7–8 AM drive the highest customer traffic across all branches**. Ensure maximum staff deployment and fully stocked inventory before opening to avoid bottlenecks and reduce customer wait times during this critical window.
+- **Lattes and cappuccinos dominate orders during peak hours**. Prioritize preparation capacity and raw material availability for these two products specifically, as any shortage or slowdown directly impacts the busiest and most revenue-generating period of the day.
+- **Weekends generate nearly double the per-day revenue of weekdays despite covering only two days**. Introduce targeted weekend promotions, loyalty incentives, or limited-time offers to further capitalize on this already strong demand and push weekend revenue higher.
+- **Hodan branch consistently outperforms Wadajir and Yaqshid due to its central business district location**. Allocate a greater share of staffing, inventory, and operational resources to Hodan particularly during Thursday, Friday, and weekend peaks  to protect and grow its revenue lead.
+- **Wadajir and Yaqshid demonstrate consistent revenue despite serving residential areas with lower foot traffic**. Invest in community-focused marketing and neighbourhood promotions at these branches to convert existing casual visitors into loyal repeat customers and unlock their growth potential.
