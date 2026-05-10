@@ -1,12 +1,15 @@
 # Barwaaqo Coffee Co. — Sales & Operations Analysis
+Barwaaqo Coffee Co. is a Mogadishu-based coffee chain established in 2021, operating across five city branches Hodan, Wadajir, Medina, Yaqshid, and Karaan ,through a direct in-store retail model.
 
-This project analyzes 6 months of sales data from Barwaaqo Coffee Co., a coffee chain with 5 branches across Mogadishu. The goal was to understand how the business is performing across branches, products, and staff — and identify where the real opportunities are.
+The company collects daily transactional data covering sales, product performance, branch operations, staff activity, and customer payment behavior. This project analyzes six months of that data to uncover the patterns, gaps, and opportunities that can improve how the business operates and grows.
 
-![Dashboard Overview](screenshots/overview.png)
+### Key Areas of Analysis:
+- Sales trends by hour, day, and month across all five branches
+- Product performance ranked by revenue, volume, and profitability
+- Branch-level comparison to identify top performers and growth opportunities
+- Staff output analysis to understand what is actually driving individual performance
 
-🔗 [View Interactive Power BI Dashboard](#) &nbsp;|&nbsp; 📁 [Dataset](#)
-
----
+An interactive Power BI dashboard used to explore and report the findings can be found !.[here].[https://app.powerbi.com/view?r=eyJrIjoiYzExMDc1YWEtODAyNy00MWIxLTlhYjQtZGQ0MDk2YmRjMDg5IiwidCI6IjI1Y2UwMjYxLWJiZDYtNDljZC1hMWUyLTU0MjYwODg2ZDE1OSJ9]
 
 ## Dataset Overview
 
