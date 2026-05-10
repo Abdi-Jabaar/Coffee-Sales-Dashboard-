@@ -9,7 +9,7 @@ The company collects daily transactional data covering sales, product performanc
 - Branch-level comparison to identify top performers and growth opportunities
 - Staff output analysis to understand what is actually driving individual performance
 
-An interactive Power BI dashboard used to explore and report the findings can be found !.[here].[https://app.powerbi.com/view?r=eyJrIjoiYzExMDc1YWEtODAyNy00MWIxLTlhYjQtZGQ0MDk2YmRjMDg5IiwidCI6IjI1Y2UwMjYxLWJiZDYtNDljZC1hMWUyLTU0MjYwODg2ZDE1OSJ9]
+An interactive Power BI dashboard used to explore and report the findings can be found [here](https://app.powerbi.com/view?r=eyJrIjoiY2QxN2RkMzEtM2Y1MS00NWQ1LTlhZmYtNTE3YWY3Y2JlMWZlIiwidCI6IjI1Y2UwMjYxLWJiZDYtNDljZC1hMWUyLTU0MjYwODg2ZDE1OSJ9)
 
 ## Dataset Overview
 
