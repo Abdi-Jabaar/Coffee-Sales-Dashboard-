@@ -40,24 +40,24 @@ An interactive Power BI dashboard used to explore and report the findings can be
 ## Dashboard Pages
 
 ### Page 1 — Monthly Performance Overview
-![Overview](screenshots/overview.png)
+![Overview](Coffeeexucative.png)
 
 The first page shows the overall business performance for any selected month. At the top there are four KPI cards — Monthly Revenue, Total Cost, Net Profit, and Profit Margin — each compared against the previous month. Below that, there is a daily revenue trend line that shows how revenue moved day by day, and a branch bar chart showing how much each branch contributed. The bottom section has two charts: one showing which hours of the day generate the most revenue, and another showing which days of the week are the busiest.
 
 ### Page 2 — Product Performance
-![Product](screenshots/product.png)
+![Product](Productp.png)
 
 This page breaks down performance by product. The top cards highlight the best selling product (Latte), total units sold, the leading category (Hot Drink at 67.3%), and the highest margin product (Americano at 91.4%). There is a horizontal bar chart ranking the top 5 products by revenue, a donut chart splitting revenue across the three categories, and a full profitability table at the bottom that shows every product with its units sold, revenue, cost, profit, and margin.
 
 ### Page 3 — Staff Performance
-![Staff](screenshots/staff.png)
+![Staff](staff.png)
 
 The third page looks at how staff are performing individually. The top cards show the top performer (Saado Axmed with $90,650 at Yaqshid branch), the most orders handled, total active staff, and average revenue per staff member. The main section has a matrix showing how much revenue each staff member generates per shift hour. On the right is a leaderboard ranking all 28 staff by total revenue, and below is a full summary table with orders, units sold, revenue, and orders per shift for each person.
 
 ---
 
 ## Executive Summary
-
+![Overview](Exucative.png)
 Barwaaqo Coffee Co. made **$1.66M in total revenue** over six months, with March being the strongest month at **$294,740** and a 74.4% profit margin. Most of the revenue happens during two periods — the 7–9 AM morning rush and the 12–1 PM lunch window. Latte is the top product in both. Hodan branch leads all five locations with 30% of total revenue. Overall the business is in a good position, but there are a few things that stand out: too much revenue is coming from one branch, a couple of products are underperforming with no plan to fix them, and the best staff member is working at the lowest volume branch.
 
 ---
@@ -66,7 +66,7 @@ Barwaaqo Coffee Co. made **$1.66M in total revenue** over six months, with March
 
 ### 1. Peak Hours
 
-![Peak Hours Chart](screenshots/peak_hours.png)
+![Peak Hours Chart](Peak.png)
 
 Looking at the full 6 months, the **7–9 AM window is the busiest part of the day** — each of those three hours generates around $193K, which is nearly double the next busiest period.
 
@@ -98,6 +98,8 @@ Revenue drops at 10 AM but partially comes back at 11 AM, then there is a clear 
 ### 2. Peak Month — March
 
 March was the highest month at **$294,740 — 9.5% above February**. Looking at just March, the hourly numbers also sharpen:
+
+![Overview](Month.png)
 
 | Period | March Revenue |
 |---|---|
@@ -154,7 +156,7 @@ A few things stand out here:
 - Create a morning combo with Croissant and Latte or Americano to increase the average order value
 - Do not discount Latte or Cappuccino — they are already the top sellers, protect the margins
 
-![Product Performance](screenshots/product.png)
+![Overview](Profatibility.png)
 
 ---
 
@@ -179,7 +181,7 @@ Yaqshid and Karaan are in residential areas and have lower traffic, but that als
 - Run a Latte promotion specifically at Yaqshid since it leads everywhere else but seems to underperform there
 - Keep investing in Hodan — do not reduce resources there to balance things out, instead grow the other branches
 
-![Branch Performance](screenshots/branch.png)
+![Branch Performance](branch1.png)
 
 ---
 
