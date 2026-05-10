@@ -1,10 +1,10 @@
 # Barwaaqo Coffee Co. — Sales & Operations Analysis
 
-> A full-scope analysis of 396,619 transactions across 5 Mogadishu branches, 6 months, and 15 products — built to surface the decisions the business should be making but currently isn't.
+This project analyzes 6 months of sales data from Barwaaqo Coffee Co., a coffee chain with 5 branches across Mogadishu. The goal was to understand how the business is performing across branches, products, and staff — and identify where the real opportunities are.
 
 ![Dashboard Overview](screenshots/overview.png)
 
-🔗 [View Interactive Power BI Dashboard](#) &nbsp;|&nbsp; 📁 [Dataset](#) &nbsp;|&nbsp; 👤 [Author](#author)
+🔗 [View Interactive Power BI Dashboard](#) &nbsp;|&nbsp; 📁 [Dataset](#)
 
 ---
 
@@ -27,36 +27,45 @@
 
 | Tool | Purpose |
 |---|---|
-| Power BI | Dashboard development, DAX measures, data modeling |
+| Power BI | Dashboard development and data modeling |
 | Power Query | Data transformation and cleaning |
-| DAX | KPI calculations, time intelligence, margin analysis |
-| Excel | Initial data exploration and validation |
+| DAX | KPI calculations and margin analysis |
+| Excel | Initial data exploration |
 
 ---
 
 ## Dashboard Pages
 
-| Page | What It Covers |
-|---|---|
-| Overview | Monthly revenue, total cost, net profit, daily trend, branch performance, peak hours, busiest days |
-| Product Performance | Top 5 by revenue, category split, full profitability table with margin per product |
-| Staff Performance | Staff leaderboard, revenue by shift hour, orders per shift, skill-level comparison |
+### Page 1 — Monthly Performance Overview
+![Overview](screenshots/overview.png)
+
+The first page shows the overall business performance for any selected month. At the top there are four KPI cards — Monthly Revenue, Total Cost, Net Profit, and Profit Margin — each compared against the previous month. Below that, there is a daily revenue trend line that shows how revenue moved day by day, and a branch bar chart showing how much each branch contributed. The bottom section has two charts: one showing which hours of the day generate the most revenue, and another showing which days of the week are the busiest.
+
+### Page 2 — Product Performance
+![Product](screenshots/product.png)
+
+This page breaks down performance by product. The top cards highlight the best selling product (Latte), total units sold, the leading category (Hot Drink at 67.3%), and the highest margin product (Americano at 91.4%). There is a horizontal bar chart ranking the top 5 products by revenue, a donut chart splitting revenue across the three categories, and a full profitability table at the bottom that shows every product with its units sold, revenue, cost, profit, and margin.
+
+### Page 3 — Staff Performance
+![Staff](screenshots/staff.png)
+
+The third page looks at how staff are performing individually. The top cards show the top performer (Saado Axmed with $90,650 at Yaqshid branch), the most orders handled, total active staff, and average revenue per staff member. The main section has a matrix showing how much revenue each staff member generates per shift hour. On the right is a leaderboard ranking all 28 staff by total revenue, and below is a full summary table with orders, units sold, revenue, and orders per shift for each person.
 
 ---
 
 ## Executive Summary
 
-Barwaaqo Coffee Co. generated **$1.66M in total revenue** across six months, peaking at **$294,740 in March** with a 74.4% profit margin. Revenue runs on two daily surges — a sustained 7–9 AM plateau and a strong 12–1 PM second peak — with Latte anchoring both windows as the top product by volume and profit. Hodan leads all five branches at 30% of total revenue, a performance tied directly to its central business district location. The business is operationally stable and commercially predictable — but that stability is obscuring three structural problems: dangerous revenue concentration in one branch, two underperforming products with no corrective strategy, and the top-performing staff member deployed in the lowest-volume location.
+Barwaaqo Coffee Co. made **$1.66M in total revenue** over six months, with March being the strongest month at **$294,740** and a 74.4% profit margin. Most of the revenue happens during two periods — the 7–9 AM morning rush and the 12–1 PM lunch window. Latte is the top product in both. Hodan branch leads all five locations with 30% of total revenue. Overall the business is in a good position, but there are a few things that stand out: too much revenue is coming from one branch, a couple of products are underperforming with no plan to fix them, and the best staff member is working at the lowest volume branch.
 
 ---
 
 ## Insights Deep Dive
 
-### 1. Peak Hours — 6-Month View
+### 1. Peak Hours
 
 ![Peak Hours Chart](screenshots/peak_hours.png)
 
-Across the full six months, the **7–9 AM window generates ~$193K per hour** — the highest and most consistent revenue band of the entire operating day:
+Looking at the full 6 months, the **7–9 AM window is the busiest part of the day** — each of those three hours generates around $193K, which is nearly double the next busiest period.
 
 | Hour | 6-Month Revenue |
 |---|---|
@@ -71,73 +80,76 @@ Across the full six months, the **7–9 AM window generates ~$193K per hour** �
 | 2 PM | $92,126 |
 | 3–8 PM | ~$79K each |
 
-This is not a spike with a single peak hour — it is a **flat plateau across three consecutive hours**, meaning the bottleneck risk is sustained, not momentary. A preparation failure at 6:50 AM does not cost one rush — it costs three.
+What makes this interesting is that the morning peak is not a spike at one hour — all three hours (7, 8, and 9 AM) are almost exactly the same. So the pressure on staff and stock is sustained for three hours straight, not just one.
 
-The **12–1 PM window is a genuine second peak at ~$126K per hour** — 65% the size of the morning plateau. It demands the same operational discipline, not an afterthought.
-
-The **10 AM dip to $79K** partially recovers at 11 AM, meaning demand still exists in that window — a targeted mid-morning offer has a real customer base to work with.
+Revenue drops at 10 AM but partially comes back at 11 AM, then there is a clear second rush at **12–1 PM generating around $126K per hour**. This lunch peak is often treated as minor but it is actually 65% the size of the morning window — it deserves the same attention.
 
 **Recommendations:**
-- Complete all restocking and staff deployment before 6:45 AM — not during the rush
-- Keep latte-skilled staff on the floor continuously from 7–9 AM, not rotated out mid-peak
-- Pre-position Iced Latte and cold drink ingredients specifically for the 12–1 PM window
-- Test a mid-morning offer (10–11 AM) to lift the dip and extend the morning revenue curve
+- Make sure everything — staff, stock, ingredients — is ready before 6:45 AM, not during the rush
+- Keep latte-skilled staff available throughout the full 7–9 AM window
+- Stock Iced Latte and cold drink ingredients before the lunch window starts
+- Try a mid-morning promotion around 10–11 AM to fill the drop between the two peaks
 
 ---
 
 ### 2. Peak Month — March
 
-March is the highest-revenue month at **$294,740 — 9.5% above February**. Within March, the hourly pattern sharpens significantly:
+March was the highest month at **$294,740 — 9.5% above February**. Looking at just March, the hourly numbers also sharpen:
 
 | Period | March Revenue |
 |---|---|
-| 7–9 AM (morning plateau) | $102,893 |
-| Single-hour peak (9 AM) | $34,641 |
-| 12–1 PM (lunch peak) | $45,219 |
+| 7–9 AM | $102,893 |
+| 9 AM alone | $34,641 |
+| 12–1 PM | $45,219 |
 
-The March spike was not broad-based. **Latte alone drove it**, growing from $53K in February to $58K. Four other products contributed $1K–$1.5K increases each, with Americano providing structural support at 85% margin. Everything else held steady.
+The reason March was the best month is mostly Latte — it grew from $53K in February to $58K in March. A few other products each added $1K–$1.5K, and Americano held strong at 85% margin. Nothing else changed significantly.
 
-More significant: **product rankings never shifted across all six months.** The same products led every month in the same order with no movement. Demand is stable — but also means the business has not developed a single new revenue source in six months. The top two products are carrying everything.
+One thing worth noting: **the product rankings stayed the same every single month across all six months**. The same products led in the same order with no changes. That tells you demand is stable and predictable — but it also means nothing new is growing. The business is still relying on the same two or three products.
 
 **Recommendations:**
-- Treat March as a planned commercial event — begin promotional preparation in February across the full product range, not just Latte
-- Use March's elevated volume to stress-test operations and expose bottlenecks before peak demand hits
-- Invest in growing mid-tier products to reduce single-product revenue dependency
+- Plan ahead for March — start promotions in February and cover all products, not just Latte
+- Use the high-volume months to test operations and find where things slow down under pressure
+- Start building up mid-tier products so the business is not dependent on Latte alone
 
 ---
 
 ### 3. Product Profitability
 
-Hot Drinks account for **67.3% of total revenue ($1.12M)**. Food follows at $340K (20.45%) and Cold Drinks at $204K (12.26%).
+Hot Drinks bring in **67.3% of total revenue ($1.12M)**. Food accounts for $340K and Cold Drinks for $204K.
 
-**Full product breakdown:**
+| Rank | Product | Category | Units Sold | Revenue | Total Cost | Profit | Margin |
+|---|---|---|---|---|---|---|---|
+| #1 | Latte | Hot Drink | 93,091 | $325,819 | $62,904 | $262,915 | 80.7% |
+| #2 | Cappuccino | Hot Drink | 59,797 | $179,391 | $36,220 | $143,171 | 79.8% |
+| #3 | Americano | Hot Drink | 62,973 | $157,433 | $23,031 | $134,402 | 85.4% |
+| #4 | Chai Latte | Hot Drink | 37,929 | $123,269 | $22,368 | $100,902 | 81.9% |
+| #5 | Croissant | Food | 54,932 | $109,864 | $49,423 | $60,441 | 55.0% |
+| #6 | Hot Chocolate | Hot Drink | 36,206 | $108,618 | $27,506 | $81,112 | 74.7% |
+| #7 | Banana Bread | Food | 39,748 | $99,370 | $29,800 | $69,570 | 70.0% |
+| #8 | Iced Latte | Cold Drink | 24,267 | $97,068 | $18,096 | $78,972 | 81.4% |
+| #9 | Mocha | Hot Drink | 22,357 | $83,839 | $23,603 | $60,236 | 71.8% |
+| #10 | Macchiato | Hot Drink | 22,820 | $79,870 | $11,312 | $68,558 | 85.8% |
+| #11 | Cheese Sandwich | Food | 25,184 | $75,552 | $23,918 | $51,634 | 68.3% |
+| #12 | Espresso | Hot Drink | 29,692 | $59,384 | $10,859 | $48,525 | 81.7% |
+| #13 | Cold Brew | Cold Drink | 14,222 | $56,888 | $30,858 | $26,030 | 45.8% |
+| #14 | Fruit Cup | Food | 21,981 | $54,953 | $16,480 | $38,473 | 70.0% |
+| #15 | Water Bottle | Cold Drink | 49,644 | $49,644 | $22,326 | $27,318 | 55.0% |
 
-| Rank | Product | Category | Units Sold | Revenue | Margin | Profit |
-|---|---|---|---|---|---|---|
-| #1 | Latte | Hot Drink | 93,091 | $325,819 | 80.7% | $262,915 |
-| #2 | Cappuccino | Hot Drink | 59,797 | $179,391 | 79.8% | $143,171 |
-| #3 | Americano | Hot Drink | 62,973 | $157,433 | 85.4% | $134,402 |
-| #4 | Chai Latte | Hot Drink | — | $123,269 | 81.9% | — |
-| #5 | Croissant | Food | 54,932 | $109,864 | 55.0% | — |
-| — | Macchiato | Hot Drink | — | — | 85.8% | — |
-| — | Water Bottle | Food | 49,644 | $49,644 | 55.0% | — |
-| — | Cold Brew | Cold Drink | 14,222 | $56,888 | 45.8% | — |
+A few things stand out here:
 
-**What the numbers reveal:**
+**Macchiato has the highest margin of any product at 85.8%** but it is not in the top 5 by revenue. It is not a bad product — people just are not ordering it because staff are not promoting it.
 
-**Macchiato** has the highest margin in the entire portfolio at 85.8% but does not appear in the top 5 by revenue. Customers are not ordering it — which is a sales floor problem, not a product problem.
+**Croissant sells well (54,932 units)** but almost half of what it earns goes to cost at 55% margin. Pairing it with Latte or Americano as a morning combo would help increase its value without changing the price.
 
-**Croissant** moves high volume but 45 cents of every dollar goes to cost. Bundling it with Latte or Americano as a morning combo improves its revenue-per-transaction contribution without touching the price.
+**Cold Brew has both the lowest volume and the lowest margin at 45.8%.** The issue here is awareness first — not many customers are ordering it. Raising the price before more people know about it would just make it worse.
 
-**Cold Brew** is the weakest product: lowest margin and lowest volume. Marketing before repricing — a price increase on an already low-volume product accelerates decline, not recovery.
-
-**Water Bottle** at $1 per unit with 55% margin is a convenience item. Treat it as one.
+**Water Bottle moves a lot of units (49,644)** but at $1 each with 55% margin, it is basically a convenience item and should be treated that way.
 
 **Recommendations:**
-- Run a 30-day price test on Cold Brew and Water Bottle (+$0.50) at one mid-volume branch — reverse if units drop more than 10%
-- Train staff to mention Macchiato at point of sale — highest margin product, currently invisible
-- Bundle Croissant with Latte or Americano as a named morning combo
-- Do not discount Latte or Cappuccino — protect margins through upselling and loyalty only
+- Test a +$0.50 price increase on Cold Brew and Water Bottle at one branch for 30 days — if orders drop more than 10%, go back to the original price
+- Ask staff to mention Macchiato to customers — it is the highest margin product and most people do not even think to order it
+- Create a morning combo with Croissant and Latte or Americano to increase the average order value
+- Do not discount Latte or Cappuccino — they are already the top sellers, protect the margins
 
 ![Product Performance](screenshots/product.png)
 
@@ -153,16 +165,16 @@ Hot Drinks account for **67.3% of total revenue ($1.12M)**. Food follows at $340
 | Yaqshid | $261,400 | 15.7% |
 | Karaan | $248,920 | 15.0% |
 
-Hodan generates 30% of total revenue — nearly double Yaqshid and Karaan individually. Its central business district location drives organic foot traffic no other branch can match without active intervention.
+Hodan is the top branch by a significant gap — it brings in 30% of total revenue, nearly double what Yaqshid and Karaan each make. This makes sense given that Hodan is in the central business district where there is naturally more foot traffic during the week.
 
-The risk is structural. At 30% dependency, a single bad month at Hodan — operational disruption, a competitor opening nearby, a key staff departure — pulls the entire business down in a way no combination of the remaining four branches can offset. The business does not have a revenue spread. It has a revenue anchor.
+The concern is that the business is heavily dependent on one branch. If Hodan has a bad month for any reason — a problem with the location, a competitor nearby, or losing a key staff member — there is no other branch that can make up for it. The other four branches together make up 70%, but that is spread across four locations.
 
-Yaqshid and Karaan together represent **30.7% of revenue across two residential-area branches**. Lower walk-in traffic is a location constraint, not a brand constraint — which means loyal repeat customers are more achievable there than at a transient business district location. That lever is currently unpulled.
+Yaqshid and Karaan are in residential areas and have lower traffic, but that also means customers there are more likely to be regulars if the branch builds a relationship with the local community.
 
 **Recommendations:**
-- Invest in community-focused marketing at Yaqshid and Karaan — loyalty programs, neighbourhood promotions, local partnerships
-- Launch a Latte-specific branch promotion at Yaqshid — it leads revenue everywhere else and any underperformance there compounds the branch's already weaker position
-- Do not reallocate Hodan's resources to compensate. Grow the others up, not Hodan down
+- Focus marketing efforts at Yaqshid and Karaan — loyalty programs, local promotions, and community-based campaigns to grow repeat customers
+- Run a Latte promotion specifically at Yaqshid since it leads everywhere else but seems to underperform there
+- Keep investing in Hodan — do not reduce resources there to balance things out, instead grow the other branches
 
 ![Branch Performance](screenshots/branch.png)
 
@@ -178,16 +190,16 @@ Yaqshid and Karaan together represent **30.7% of revenue across two residential-
 | Faadumo Ciise | Hodan | Medium | $85,535 | 21,693 | 119.2 |
 | Amina Warsame | Hodan | High | $83,293 | 19,145 | 105.2 |
 
-Saado Axmed leads every metric — revenue, orders, and orders per shift — while working at Yaqshid, **the lowest-volume branch in the chain**, classified as Medium skill.
+Saado Axmed is number one across every metric — revenue, total orders, and orders per shift — and she works at Yaqshid, which is the lowest volume branch in the whole chain. She is also rated Medium skill.
 
-The pattern holds across the full leaderboard: **Medium-skill staff consistently outperform High-skill staff**. The explanation is not individual ability — it is shift structure. High-skill staff work the 7–9 AM morning peak alongside three to four colleagues. Top performers like Saado work afternoon slots with one to two colleagues, absorbing the full operational load of a lower-traffic period alone. **The performance gap is a workload gap, not a skill gap.**
+Looking at the full leaderboard, Medium-skill staff consistently outrank High-skill staff. At first this seems like a skill rating issue, but when you look at how shifts are structured it makes more sense: High-skill staff work the 7–9 AM morning rush with 3–4 colleagues around them. Staff like Saado work afternoon shifts mostly alone or with one other person, handling everything by themselves during a slower but still active period. The gap is about workload distribution, not actual skill level.
 
-The secondary problem: if Medium consistently outranks High across volume, timing, and branch controls, the skill classification system is not measuring what it claims to. Any hiring or promotion decision built on that rating is operating on flawed data.
+This also raises a question about the skill rating system itself. If Medium staff keep outperforming High staff even when you account for shift timing and branch volume, the rating may not be measuring what it is supposed to.
 
 **Recommendations:**
-- Rebalance shifts — move one to two staff from the over-staffed morning peak to afternoon slots
-- Build an Employee of the Month framework on measurable output: revenue, orders handled, orders per shift — not skill rating
-- Audit the skill classification methodology before using it for any further staffing decisions
+- Move one or two staff from the morning peak to afternoon shifts where the workload is being handled by too few people
+- Create a recognition system based on actual output — revenue, orders handled, and orders per shift — not skill rating
+- Review how the skill levels are being assigned before using them to make any staffing or hiring decisions
 
 ![Staff Performance](screenshots/staff.png)
 
@@ -197,16 +209,16 @@ The secondary problem: if Medium consistently outranks High across volume, timin
 
 | Area | Action | Priority |
 |---|---|---|
-| Peak Hours | Pre-open restock, sustained latte-skilled coverage 7–9 AM, test 10–11 AM bridge offer | High |
-| Peak Month | Start March prep in February; reduce top-2 product dependency | Medium |
-| Product Portfolio | Price test Cold Brew +$0.50, bundle Croissant, push Macchiato at POS | High |
-| Branch Balance | Community marketing at Yaqshid and Karaan; Latte push at Yaqshid specifically | Medium |
-| Staff Deployment | Rebalance morning vs afternoon shifts; output-based recognition; audit skill ratings | High |
+| Peak Hours | Pre-open restock, full staffing coverage 7–9 AM, test mid-morning offer 10–11 AM | High |
+| Peak Month | Start March prep in February, develop mid-tier products | Medium |
+| Product Portfolio | Price test Cold Brew +$0.50, bundle Croissant, promote Macchiato at point of sale | High |
+| Branch Balance | Community marketing at Yaqshid and Karaan, Latte push at Yaqshid | Medium |
+| Staff | Rebalance shifts, output-based recognition, review skill rating system | High |
 
 ---
 
 ## Project Info
 
-This is a portfolio project built to demonstrate end-to-end data analysis — from raw transactional data to a structured business report with actionable recommendations.
+This is a portfolio project that covers the full data analysis workflow — data cleaning, modeling, DAX calculations, dashboard design, and business reporting.
 
 Tools: Power BI · DAX · Power Query · Excel
