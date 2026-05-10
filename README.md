@@ -40,7 +40,7 @@ An interactive Power BI dashboard used to explore and report the findings can be
 ## Dashboard Pages
 
 ### Page 1 — Monthly Performance Overview
-![Overview](Coffeeexucative.png)
+![Overview](Coffee_exucative.png)
 
 The first page shows the overall business performance for any selected month. At the top there are four KPI cards — Monthly Revenue, Total Cost, Net Profit, and Profit Margin — each compared against the previous month. Below that, there is a daily revenue trend line that shows how revenue moved day by day, and a branch bar chart showing how much each branch contributed. The bottom section has two charts: one showing which hours of the day generate the most revenue, and another showing which days of the week are the busiest.
 
@@ -50,7 +50,7 @@ The first page shows the overall business performance for any selected month. At
 This page breaks down performance by product. The top cards highlight the best selling product (Latte), total units sold, the leading category (Hot Drink at 67.3%), and the highest margin product (Americano at 91.4%). There is a horizontal bar chart ranking the top 5 products by revenue, a donut chart splitting revenue across the three categories, and a full profitability table at the bottom that shows every product with its units sold, revenue, cost, profit, and margin.
 
 ### Page 3 — Staff Performance
-![Staff](staff.png)
+![Staff](Staff.png)
 
 The third page looks at how staff are performing individually. The top cards show the top performer (Saado Axmed with $90,650 at Yaqshid branch), the most orders handled, total active staff, and average revenue per staff member. The main section has a matrix showing how much revenue each staff member generates per shift hour. On the right is a leaderboard ranking all 28 staff by total revenue, and below is a full summary table with orders, units sold, revenue, and orders per shift for each person.
 
@@ -206,7 +206,7 @@ This also raises a question about the skill rating system itself. If Medium staf
 - Create a recognition system based on actual output — revenue, orders handled, and orders per shift — not skill rating
 - Review how the skill levels are being assigned before using them to make any staffing or hiring decisions
 
-![Staff Performance](screenshots/staff.png)
+![Staff Performance](Staff_Perf.png)
 
 ---
 
